@@ -14,6 +14,10 @@
     font-size: 18px;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-size: unset;
+}
+
 p, h1, h2, h3, h4, h5, h6 {
     line-height: 1.6;
     font-family: 'Roboto', sans-serif;
@@ -21,6 +25,11 @@ p, h1, h2, h3, h4, h5, h6 {
 
 a, span {
     font-family: 'Roboto', sans-serif;
+}
+
+.MathJax {
+    font-size: 12pt !important;
+    font-family: 'Times New Roman', Times, serif !important;
 }
 
 mjx-line {
