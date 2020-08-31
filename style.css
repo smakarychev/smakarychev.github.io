@@ -11,6 +11,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 18px;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -20,6 +21,10 @@ p, h1, h2, h3, h4, h5, h6 {
 
 a, span {
     font-family: 'Roboto', sans-serif;
+}
+
+mjx-line {
+    font-size: 100% !important;
 }
 
 .col-red{
@@ -134,6 +139,16 @@ div, section {
     left: 0;
 }
 
+@media screen and (max-device-width:640px), screen and (max-width:640px) {
+    .side-menu {
+        width: 100vw;
+        left: -1000px;
+    }
+
+    .side-menu.active {
+        left: 0;
+    }
+}
 .side-menu > ul {
     list-style-type: none;
     margin-top: 2rem;
