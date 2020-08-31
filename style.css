@@ -139,14 +139,31 @@ div, section {
     left: 0;
 }
 
-@media screen and (max-device-width:640px), screen and (max-width:640px) {
+@media screen and (max-device-width:768px), screen and (max-width:768px) {
     .side-menu {
-        width: 100vw;
+        width: calc(100vw - 2px);
         left: -1000px;
     }
 
     .side-menu.active {
         left: 0;
+    }
+
+    .side-menu.active > ul {
+        padding-top: 3rem;
+    }
+
+    .side-menu ul li a {
+        font-size: 40px !important; 
+    }
+
+    .hamburger.active {
+        z-index: 4;
+        left: calc(100vw - var(--hamburger-width) - 1rem);
+    }
+
+    .hamburger.active > .line {
+        background-color: rgb(94, 94, 94);
     }
 }
 .side-menu > ul {
