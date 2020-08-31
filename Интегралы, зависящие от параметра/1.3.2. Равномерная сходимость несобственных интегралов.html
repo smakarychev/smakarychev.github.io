@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Математический анализ</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link href="../style.css" type="text/css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+	<nav>
+		<div class="hamburger" id="toggle-menu">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</div>
+		<div class="side-menu" id="main-menu">
+			<ul>
+				<li class="sub-menu">
+					<a href="#">Интегралы, зависящие
+						от параметра.<img src="../icons/down.png" class="submenu-icon submenu-trigger"></a>
+					<ul>
+						<li><a href="1.1. Равномерная сходимость функций по параметру.html">1.1. Равномерная сходимость
+								функций по параметру.</a></li>
+						<li><a href="1.2. Собственные интегралы.html">1.2. Собственные интегралы.</a></li>
+						<li><a href="Общий случай.html">Общий случай.</a></li>
+						<li class="sub-menu">
+							<a href="#">1.3 Несобственные интегралы.<img src="../icons/down.png"
+									class="submenu-icon submenu-trigger"></a>
+							<ul>
+								<li><a href="1.3.1. Основные определения.html">1.3.1. Основные определения.</a></li>
+								<li><a href="1.3.2. Равномерная сходимость несобственных интегралов.html">1.3.2.
+										Равномерная сходимость несобственных интегралов.</a></li>
+								<li><a href="1.3.3. Признаки равномерной сходимости .html">1.3.3. Признаки равномерной
+										сходимости.</a></li>
+								<li><a href="1.3.4. Свойства равномерно сходящихся интегралов.html">1.3.4.
+										Свойства равномерно сходящихся интегралов.</a></li>
+								<li><a href="1.3.5. Эйлеровы интегралы.html">1.3.5. Эйлеровы интегралы.</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+<div id="size"><img src="../icons/enlarge.png" class="size-icon"></div>
+			</ul>
+		</div>
+	</nav>
+	<main class="main small">
+
+
+		<h2 class="centered">Равномерная сходимость несобственных интегралов</h2>
+
+		<p><strong><em>Несобственный интеграл </em></strong>называется <strong><em>равномерно
+					сходящимся по параметру</em></strong><strong> \(\displaystyle \gamma \) <em>на \(\displaystyle
+					\Gamma \)</em></strong>,
+			если он сходится на \(\displaystyle \Gamma \) и выполняется одно из следующих эквивалентных условий:</p>
+		<p>1) \(\displaystyle \forall \varepsilon &gt;0\) \(\displaystyle \exists {{\eta }_{\varepsilon }}\ge a\)
+			\(\displaystyle \forall \eta \in \left( {{\eta }_{\varepsilon }},\mathbf{B} \right)\) \(\displaystyle
+			\forall
+			\gamma \in \Gamma \) \(\displaystyle \left| \int\limits_{\eta }^{\mathbf{B}}{f(x,\gamma )dx}
+			\right|&lt;\text{ }\!\!\varepsilon\!\!\text{ }\),</p>
+		<p>2) \(\displaystyle \forall \varepsilon &gt;0\) \(\displaystyle \exists {{\eta }_{\varepsilon }}\ge a\)
+			\(\displaystyle \forall \eta \in \left( {{\eta }_{\varepsilon }},\mathbf{B} \right)\) \(\displaystyle
+			\underset{\gamma \in \Gamma }{\mathop{\sup }}\,\) \(\displaystyle \left| \int\limits_{\eta
+			}^{\mathbf{B}}{f(x,\gamma )
+			dx} \right|&lt;\text{ }\!\!\varepsilon\!\!\text{ }\),</p>
+		<p>3) \(\displaystyle \underset{\eta \to \mathbf{B}}{\mathop{\lim }}\,\underset{\gamma \in \Gamma }
+			{\mathop{\sup }}\,\left| \int\limits_{\eta }^{\mathbf{B}}{f\left( x,\gamma \right)dx} \right|=0.\)</p>
+		
+
+		<section class="theorem">
+			<p><strong>Теорема 14 (критерий равномерной сходимости Коши). </strong>
+				Для равномерной по параметру \(\displaystyle \gamma \) на \(\displaystyle \Gamma \) сходимости
+				несобственного
+				интеграла</p>
+			<p>\(\displaystyle I(\gamma )=\int\limits_{a}^{\mathbf{B}}{f(x,\gamma )dx}\), \(\displaystyle \gamma \in
+				\Gamma \)</p>
+			<p>необходимо и достаточно, чтобы</p>
+			<p>\(\displaystyle \forall \varepsilon &gt;0\) \(\displaystyle \exists {{\eta }_{\varepsilon }}\ge a\)
+				\(\displaystyle \forall {\eta }'\in \left( {{\eta }_{\varepsilon }},\mathbf{B} \right)\,\,\,\forall
+				{\eta }''\in \left( {{\eta }_{\varepsilon }},\mathbf{B} \right)\) \(\displaystyle
+				\underset{\gamma \in \Gamma }{\mathop{\sup }}\,\)\(\displaystyle \left| \int\limits_{{{\eta }'}}^{{{\eta }''}}
+	 {f(x,\gamma )\,dx} \right|&lt;\text{ }\!\!\varepsilon\!\!\text{ }\).</p>
+	</section>
+	<section class="consequence">
+	<p><strong>Следствие (связь с функциональными рядами).</strong> Равномерная по \(\displaystyle \gamma \) 
+		сходимость интеграла \(\displaystyle I(\gamma )\), \(\displaystyle \gamma \in \Gamma \) эквивалентна равномерной 
+		сходимости всех рядов вида \(\displaystyle \sum\limits_{n=0}^{+\infty }{\int\limits_{{{c}_{n}}}^{{{c}_{n+1}}}
+			{f(x,\gamma )dx}}\), где \(\displaystyle \left\{ {{c}_{n}} \right\}\) – произвольная, сходящаяся к
+			\(\displaystyle \mathbf{B}\) последовательность.</p>
+	</section>
+
+
+
+	</main>
+	<footer class="footer">
+		<p>Учебные материалы </p>
+		<p>Автор материалов - Рояк Светлана Хаимовна.</p>
+	</footer>
+	<script src="../main.js"></script>
+</body>
+
+</html>
