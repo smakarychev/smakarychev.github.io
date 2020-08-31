@@ -166,6 +166,10 @@ div, section {
         font-size: 40px !important; 
     }
 
+    .hamburger {
+        position: absolute;
+    }
+
     .hamburger.active {
         z-index: 4;
         left: calc(100vw - var(--hamburger-width) - 1rem);
